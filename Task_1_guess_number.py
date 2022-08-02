@@ -27,6 +27,9 @@ guess_taken = 0
 '''
 module “math” which allows us to compute logs using a single line.
 '''
+print("\n\tYou've only ",
+       round(math.log(upper - lower + 1, 2)),
+      " chances to guess the integer!\n")
 while guess_taken < math.log(upper_bound - lower_bound + 1, 2):
     guess_taken += 1
     # Input values in guess variable
